@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Portfolio</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="stylesheet.css" rel="stylesheet">
+	<style type=text/css>
+		body {background-color: black;}
+		h1, h2 {font-family: Tahoma;}
+		p {font-family: Arial;}
+	</style>
+</head>
+
+<body>
+
+<div class="topnav">
+	<a class="active" href="#home">Home</a>
+	<a href="#about">About</a>
+	<a href="#experience">Experience</a>
+	<a href="#contact">Contact</a>
+</div>
+
+<div class="hero-image" id="home">
+	<div class="hero-text">
+		<h1>I am Zach Millington</h1>
+		<p>And I'm a Software Engineering Student</p>
+	</div>
+</div>
+
+<div class="about-section" id="about">
+	<h2>About Me</h2>
+	<p>I'm a second year software engineering student at Western University.</p>
+	<p>I have experience coding with Java and HTML/CSS/JS, as well as a basic understanding of C++.</p>
+	<p>I also have practical experience with programming, as I have applied my skills in extracurriculars. (See <i>Experience</i>)</p>
+</div>
+
+<div class="experience-section" id="experience">
+	<h2>My Experience</h2>
+	<div class="row">
+		<div class="column">
+			<p>As mentioned in the <i>About Me</i> section, I have practical experience programming, specifically with Java, 
+			through my High School's robotics team. During my time on this time, my teammates and I applied our Java coding 
+			skills in order to program both the controls for our team's robot which would compete at events, as well as its automated 
+			functions. I have also taken highschool and university courses in the software engineering field, enabling me to 
+			further refine my proficiency with various languages and to learn important software engineering fundamentals.</p>
+		</div>
+		<div class="column">
+			<img src="images/FIRST.jpg" style="width: 70%">
+		</div>
+	</div>
+</div>
+			
+
+<div class="container" id="contact">
+	<div style="text-align:center">
+		<h2>Contact Me</h2>
+		<p>If you would like to send me a message or have any questions, please use this form:</p>
+    </div>
+    <div class="row">
+		<div class="column">
+			<img src="images/Contact.png" style="width: 75%">
+		</div>
+		<div class="column">
+			<form action="index.html">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="Type your first name here...">
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Type your last name here...">
+				<label for="country">Country</label>
+				<select id="country" name="country">
+					<option value="australia">Australia</option>
+					<option value="canada">Canada</option>
+					<option value="uk">UK</option>
+					<option value="usa">USA</option>
+				</select>
+				<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="Type your message here..." style="height:150px"></textarea>
+				<input type="submit" value="Submit">
+				<br><br><br>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<p>Zachary Millington</p>
+</div>
+
+</body>
+</html>
